@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="julio.salazar.guevara.detector.MainActivity">
+
+    <TextView
+        android:id="@+id/tvVerdadero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Verdadero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <ImageButton
+        android:id="@+id/iBtnImage"
+        android:layout_width="223dp"
+        android:layout_height="266dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <TextView
+        android:id="@+id/tvFalso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:text="Falso"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvVerdadero"
+        app:layout_constraintStart_toEndOf="@+id/tvVerdadero" />
+
+    <ImageView
+        android:id="@+id/ivVerdadero"
+        android:layout_width="57dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerdadero"
+        app:srcCompat="@drawable/trueimage" />
+
+    <ImageView
+        android:id="@+id/ivFalso"
+        android:layout_width="56dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ivVerdadero"
+        app:layout_constraintTop_toBottomOf="@+id/tvFalso"
+        app:srcCompat="@drawable/wrongimage" />
+
+</android.support.constraint.ConstraintLayout>
